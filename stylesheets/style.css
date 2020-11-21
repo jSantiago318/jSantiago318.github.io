@@ -20,11 +20,25 @@ a {
   color:#FFFFFF ;
 }
 
-.center{
-  margin: auto;
-  width: 50%;
+.fullscreenDiv {
+  background-color: #C2E7DA;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  top: 0px;
+  left: 0;
+  position: absolute;
+}
+.center {
+  position: absolute;
+  border: 1px solid blue;
+  width: 100px;
+  height: 50px;
   top: 50%;
   left: 50%;
+  margin-top: -25px;
+  margin-left: -50px;
+  font-family: 'Anonymous Pro', monospace;
 
 }
 
