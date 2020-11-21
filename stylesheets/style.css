@@ -7,6 +7,8 @@ html, body{
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Anonymous Pro', monospace;
+
 }
 
 a {
@@ -16,4 +18,24 @@ a {
 ::selection{
   background-color: #343434;
   color:#FFFFFF ;
+}
+
+.center{
+  margin: auto;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+
+}
+
+#main_page{
+background-color: #C2E7DA;
+}
+
+#about_me_page{
+  background-color: #E3655B;
+}
+
+#project_page{
+  background-color: #F2C14E;
 }
