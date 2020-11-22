@@ -10,7 +10,10 @@ html, body{
   font-family: 'Anonymous Pro', monospace;
 
 }
+h2, h3{
+  font-family: 'Anonymous Pro', monospace;
 
+}
 a {
   color: #00B7FF;
 }
@@ -38,14 +41,38 @@ a {
 
 }
 
-#main_page{
-background-color: #C2E7DA;
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-#about_me_page{
-  background-color: #E3655B;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-#project_page{
-  background-color: #F2C14E;
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
 }
