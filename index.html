@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+    </script>
 </head>
 <body>
   <div id="main_page">  
@@ -18,7 +24,9 @@
     <nav class="fixed-bottom navbar-light ">
       <ul class="nav justify-content-center" >
         <li class="nav-item" >
-          <span class="dot" style=" background-color: #E3655B ;"></span>
+          <span class="dot" style=" background-color: #E3655B ;">
+            <button type="button" onclick="myFunction()">.</button>
+          </span>
           <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
