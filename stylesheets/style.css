@@ -17,13 +17,12 @@
 }
 .middle {
   width: 50%;
-  margin: 20% 1% 0% 1%;
+  margin: 15% 1% 0% 1%;
 }
 .right {
-  width: 20%;
+  width: 23%;
   margin: 22% 1% 1% 0%;
-  padding: 0% 3% 6% 6%;
-
+  padding: 0% 3% 4% 5%;
 }
 /* Clear floats after the columns */
 .rows:after {
@@ -67,14 +66,11 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Anonymous Pro', monospace;
-
+font-family: 'Montserrat', sans-serif;
 }
 
-h2,
-h3 {
-  font-family: 'Anonymous Pro', monospace;
-
+p, h1, h2, h3, h4, a, li{
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -83,21 +79,30 @@ a {
 
 .title {
   padding: 1%;
-  margin: 15% 1% 1% 5%;
+  margin: 10% 1% 1% 5%;
 
 }
 
 .title h1{
   margin: 4% 0% 13% 0%;
+  font-size: 70px;
 }
 .title h4{
   margin: 15% 0% 8% 0%;
+  font-size: 40px;
 }
 #infoText {
-  margin: 1% 10% 1% 10%;
   font-size: 30px;
 }
 
+.selectedOff{
+  background-color: White;
+  color: black;
+}
+.selectedOn{
+  background-color: black;
+  color: white;
+}
 
 ::selection {
   background-color: #343434;

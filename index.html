@@ -12,10 +12,23 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@1,400;1,700&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   <script type="text/javascript">
-    function contentToVal(divName, val) {
+    function contentToVal(index, divName, val) {
       document.getElementById(divName).innerHTML = val;
+
+      var elements = document.getElementsByName('radiobutton');
+
+      for (var i = 0; i < elements.length; i++) {
+          if (index == i) {
+            elements[i].setAttribute("class", "selectedOn");
+          } else {
+            elements[i].setAttribute("class", "selectedOff");
+          }
+      }
     };
+
   </script>
 </head>
 
@@ -23,8 +36,7 @@
   <div class="rows">
     <div class="title column left">
       <h1>Hi, I'm Joshua</h1>
-      <h4>Welcome to my Portfolio</h4>
-      <h4>I'm a Software Engineering Student at <u>UPRM</u></h4>
+      <h4>I'm a Software Engineering Student at <u href="https://www.uprm.edu/portada/">UPRM</u></h4>
     </div>
     <div class="column middle">
       <p id="infoText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -37,18 +49,18 @@
       <ul>
         <li>
           <p type="radio" name="radiobutton"
-          onclick="contentToVal('infoText', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')">
+          onclick="contentToVal(0, 'infoText', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')">
           About Me</p>
         </li>
         <li>
           <p type="radio" name="radiobutton"
-          onclick="contentToVal('infoText', 'Augue lacus viverra vitae congue eu consequat ac. Sit amet cursus sit amet dictum sit amet. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Tellus integer feugiat scelerisque varius morbi enim nunc. Morbi leo urna molestie at. Ut lectus arcu bibendum at varius vel. Magna etiam tempor orci eu lobortis elementum. Pellentesque id nibh tortor id aliquet lectus proin. Felis eget velit aliquet sagittis id. Interdum posuere lorem ipsum dolor sit amet consectetur. Auctor elit sed vulputate mi sit amet mauris.')">
+          onclick="contentToVal(1, 'infoText', 'Augue lacus viverra vitae congue eu consequat ac. Sit amet cursus sit amet dictum sit amet. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Tellus integer feugiat scelerisque varius morbi enim nunc. Morbi leo urna molestie at. Ut lectus arcu bibendum at varius vel. Magna etiam tempor orci eu lobortis elementum. Pellentesque id nibh tortor id aliquet lectus proin. Felis eget velit aliquet sagittis id. Interdum posuere lorem ipsum dolor sit amet consectetur. Auctor elit sed vulputate mi sit amet mauris.')">
           Resume</p>
         </li>
         <li>
           <p type="radio" name="radiobutton"
-          onclick="contentToVal('infoText', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')">
-          My Projects</p>
+          onclick="contentToVal(2, 'infoText', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in cursus turpis. Quam elementum pulvinar etiam non quam lacus suspendisse. Arcu ac tortor dignissim convallis aenean. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Pellentesque adipiscing commodo elit at imperdiet. Semper quis lectus nulla at volutpat. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Urna nec tincidunt praesent semper feugiat. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Eget est lorem ipsum dolor sit amet consectetur adipiscing elit. Fermentum iaculis eu non diam phasellus vestibulum lorem.')">
+          Projects</p>
         </li>
       </ul>
     </div>
