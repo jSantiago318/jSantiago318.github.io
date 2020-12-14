@@ -11,7 +11,7 @@
   display:flex;
 }
 .left {
-  width: 20%;
+  width: 40%;
   margin: 25% 1% 0% 1%;
 
 }
@@ -79,17 +79,17 @@ a {
 
 .title {
   padding: 1%;
-  margin: 10% 1% 1% 5%;
+  margin: 10% 1% 1% 15%;
 
 }
 
 .title h1{
-  margin: 4% 0% 13% 0%;
-  font-size: 70px;
+  /* margin: 4% 0% 13% 0%;
+  font-size: 0px; */
 }
 .title h4{
-  margin: 15% 0% 8% 0%;
-  font-size: 40px;
+  /* margin: 15% 0% 8% 0%;
+  font-size: 40px; */
 }
 #infoText {
   font-size: 30px;
