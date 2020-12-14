@@ -69,6 +69,7 @@ body {
 font-family: 'Montserrat', sans-serif;
 }
 
+
 p, h1, h2, h3, h4, a, li{
   font-family: 'Montserrat', sans-serif;
 }
@@ -83,13 +84,20 @@ a {
 
 }
 
+.title u{
+  color: #B483CD;
+}
 .title h1{
   /* margin: 4% 0% 13% 0%;
   font-size: 0px; */
+
 }
 .title h4{
   /* margin: 15% 0% 8% 0%;
   font-size: 40px; */
+}
+.title p{
+  font-size: 17px;
 }
 #infoText {
   font-size: 30px;
