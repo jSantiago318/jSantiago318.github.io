@@ -1,142 +1,77 @@
-  /* font-family: 'Anonymous Pro', monospace;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif; */
-
-.column {
-  float: left;
-}
-.rows {
-  margin-left: 0px;
-  margin-right: 0px;
-  display:flex;
-}
-.left {
-  width: 40%;
-  margin: 25% 1% 0% 1%;
-
-}
-.middle {
-  width: 50%;
-  margin: 15% 1% 0% 1%;
-}
-.right {
-  width: 23%;
-  margin: 22% 1% 1% 0%;
-  padding: 0% 3% 4% 5%;
-}
-/* Clear floats after the columns */
-.rows:after {
-  content: "";
-  display: table;
-  clear: both;
+body,
+h1,
+h5 {
+  font-family: "Raleway", sans-serif
 }
 
-.bodyText {
-  padding: 1%;
-  margin: 1%;
+body,
+html {
+  height: 100%
 }
 
-ul {
-  /* margin: 5% 2% 5% 65%; */
-  /* padding: 0% 0% 0% 0%; */
-
-}
-
-ul>li {
-  display: inline-block;
-  /* You can also add some margins here to make it look prettier */
-  /* zoom:1; */
-  /* margin: 0% 1% 0% 1%; */
-  /* padding: 0% 0% 0% 0%; */
-  /* padding-right: 3%; */
-  /* padding-left: 3%; */
-
-}
-
-ul>li>p {
-  padding: 10% 0% 0% 0%;
-  margin: 0%;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-html,
-body {
-  
-  width: 100%;
-  margin: 0;
-  padding: 0;
-font-family: 'Montserrat', sans-serif;
-}
-
-
-p, h1, h2, h3, h4, a, li{
-  font-family: 'Montserrat', sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
-.title {
-  padding: 1%;
-  margin: 10% 1% 1% 15%;
-
-}
-
-.title u{
-  color: #B483CD;
-}
-.title h1{
-  /* margin: 4% 0% 13% 0%;
-  font-size: 0px; */
-
-}
-.title h4{
-  /* margin: 15% 0% 8% 0%;
-  font-size: 40px; */
-}
-.title p{
-  font-size: 17px;
-}
-#infoText {
-  font-size: 30px;
-}
-
-.selectedOff{
-  background-color: White;
-  color: black;
-}
-.selectedOn{
-  background-color: black;
-  color: white;
-}
-
-::selection {
-  background-color: #343434;
-  color: #FFFFFF;
-}
-
-.center {
-  margin: 50vh;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
-  align-items: center;
-  font-family: 'Anonymous Pro', monospace;
-
-}
-
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+.mid{
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.nav {
-  margin: 10% 10% 10% 10%;
+.bgimg {
+  /* background-image: url('../images/bg1.jpg'); */
+  background-color: #264653;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+
+    /* Add the blur effect */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+}
+
+.bg-as-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 77vw;
+  overflow: hidden;
+}
+
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 1; */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  position: absolute;
+  font-size: 2em;
+}
+
+.typing {
+  width: 12ch;
+  animation: typing 3s steps(22), blink 5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  /* z-index: 2; */
+  color: #f4a261;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
