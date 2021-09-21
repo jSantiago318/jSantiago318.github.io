@@ -8,6 +8,28 @@ body,
 html {
   height: 100%
 }
+div{
+  position: relative;
+}
+.hyperspan{
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  left: 0;
+  bottom: 0;
+  background-color: #f4a261;
+  text-align: center;
+  margin: auto;
+
+}
+.hyperspan a{
+  color: #264653;
+  font-size: 30px;
+}
+
+.hyperspan span{
+  font-size: 30px;
+}
 
 .mid{
   position: absolute;
