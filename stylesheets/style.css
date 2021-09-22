@@ -16,15 +16,16 @@ div{
   width: 100%;
   height: 7%;
   left: 0;
-  bottom: 0;
-  background-color: #f4a261;
+  bottom: 0; 
   text-align: center;
   margin: auto;
 
 }
 .hyperspan a{
-  color: #264653;
+  color: #D0CD94;
   font-size: 30px;
+  border: 3px solid #D0CD94;
+  margin: 3%;
 }
 
 .hyperspan span{
@@ -40,7 +41,7 @@ div{
 
 .bgimg {
   /* background-image: url('../images/bg1.jpg'); */
-  background-color: #264653;
+  background-color: #241623;
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -83,7 +84,7 @@ div{
   font-family: monospace;
   font-size: 2em;
   /* z-index: 2; */
-  color: #f4a261;
+  color: #D0CD94;
 }
 
 @keyframes typing {
@@ -95,5 +96,29 @@ div{
 @keyframes blink {
   50% {
     border-color: transparent
+  }
+}
+
+.item {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  position: relative;
+}
+
+
+.arrow {
+  animation: slide 2s ease-in-out infinite;
+  margin-left: 9px;
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    transform: translate(0, 0) ;
+  }
+
+  50% {
+    transform: translate(0, 10px);
   }
 }
